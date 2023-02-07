@@ -8,10 +8,8 @@ We can deal with CORS issues on the backend. Cross-origin requests require that 
 <br>
 There are two ways to fix CORS issues:
 <br>
-<br>
 <h3>𝟭. 𝗖𝗼𝗻𝗳𝗶𝗴𝘂𝗿𝗲 𝘁𝗵𝗲 𝗕𝗮𝗰𝗸𝗲𝗻𝗱 𝘁𝗼 𝗔𝗹𝗹𝗼𝘄 𝗖𝗢𝗥𝗦</h3>
 Server can let all domains with  𝗔𝗰𝗰𝗲𝘀𝘀-𝗖𝗼𝗻𝘁𝗿𝗼𝗹-𝗔𝗹𝗹𝗼𝘄-𝗢𝗿𝗶𝗴𝗶𝗻: *. This actually turns off same-origin policy, which is not recommended. Another optin would be only to allow particular domain, which is better option, e.g., 𝗔𝗰𝗰𝗲𝘀𝘀-𝗖𝗼𝗻𝘁𝗿𝗼𝗹-𝗔𝗹𝗹𝗼𝘄-𝗢𝗿𝗶𝗴𝗶𝗻: 𝗵𝘁𝘁𝗽𝘀://𝘀𝗼𝗺𝗲𝗱𝗼𝗺𝗮𝗶𝗻.𝗰𝗼𝗺.
-<br>
 <br>
 <h3>𝟮. 𝗨𝘀𝗲 𝗮 𝗣𝗿𝗼𝘅𝘆 𝗦𝗲𝗿𝘃𝗲𝗿</h3>
 We can use a proxy server to call external API. It acts as a middleware between client and the server. If server doesn't return proper headers defined by CORS, we can add then in the proxy.
